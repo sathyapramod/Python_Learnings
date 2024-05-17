@@ -48,3 +48,61 @@ print(name.title())
 print(name.upper())
 print(name.lower())
 
+# 3 & 4
+name = "Albert Einstein"
+quota = '"A person who never made a mistake never tried anything new."'
+message = name + " once said, " + quota
+print(message)
+
+"""
+Geeks for Geeks Strings
+https://www.geeksforgeeks.org/python-string/#what-is-a-string-in-python
+"""
+
+# Accessing characters in Python String
+#  Positive Indexing
+String1 = "GeeksForGeeks"
+print("Initial String: ", String1)
+
+print("First character of String is ", String1[0])
+
+# Negative Indexing
+print("Last character of String is ", String1[-1])
+
+# String Slicing Python
+print("Initial String: ", String1)
+
+# Printing 3rd to 12th character
+print("Slicing character from 3-12: ", String1[3:12])
+
+# Printing 3rd and 2nd last character
+print("Slicing character between 3rd and 2nd last character: ", String1[3:-2])
+
+# Deleting/Updating from a String
+"""
+Updating a character
+A character of a string can be updated in Python by first converting the string into a Python List and then updating the element in the list. As lists are mutable in nature, we can update the character and then convert the list back into the String.
+
+Another method is using the string slicing method. Slice the string before the character you want to update, then add the new character and finally add the other part of the string again by string slicing.
+"""
+
+String1 = "Hello, I'm a String!"
+print("Initial String: ", String1)
+
+# Method 1
+list1 = list(String1)
+list1[2] = 'p'
+String2 = ''.join(list1)
+print("Updated 2nd index: ", String2)
+
+# Method 2
+
+String3 = String1[0:2] + 'p' + String1[3:]
+print(String3)
+
+# Formatting of Strings
+
+# Default order
+String1 = "{} {} {}".format('Geeks', 'For', 'Life')
+print("Print String in default order: ")
+print(String1)
