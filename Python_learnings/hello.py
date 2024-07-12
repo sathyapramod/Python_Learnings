@@ -37,16 +37,4 @@ x = None
 print(x)
 print(type(x))
 
-# File handling
 
-# with open('abc.txt', 'w') as f:
-#     f.write('abc\n')
-#     f.write('xyz\n')
-#     f.write('qwerty\n')
-#     print("Is closed:", f.closed)
-#     print("Successful")
-
-f = open('abc.txt', 'r')
-print(f.tell())
-print(f.read(10))
-print(f.tell())
