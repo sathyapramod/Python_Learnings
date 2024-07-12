@@ -1,0 +1,7 @@
+python is programming language
+netapp is a storage company
+bios and loader
+bmc
+
+
+
