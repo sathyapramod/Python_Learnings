@@ -7,7 +7,7 @@ Example:
     The minimum sum is 1+3+5+7 = 16 and the maximum sum is 3+5+7+9 = 24. The function prints 16 24
 """
 
-arr = [1, 3, 5, 7, 9]
+arr = [1, 2, 3, 4, 5]
 
 total_sum = sum(arr)
 print(total_sum)
@@ -18,3 +18,16 @@ for i in arr:
 
 print(sums)
 print(min(sums), max(sums))
+
+"""
+2nd app
+"""
+arr = [1, 3, 5, 7, 9]
+
+ll = []
+c = 0
+for i in arr:
+    if c <= 4:
+        ll.append(min(arr))
+
+
